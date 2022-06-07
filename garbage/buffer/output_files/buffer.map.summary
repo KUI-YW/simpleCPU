@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Mon May 03 18:12:00 2021
+Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+Revision Name : buffer
+Top-level Entity Name : buffer
+Family : Cyclone IV E
+Total logic elements : 2
+    Total combinational functions : 0
+    Dedicated logic registers : 2
+Total registers : 2
+Total pins : 3
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

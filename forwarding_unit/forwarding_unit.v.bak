@@ -1,0 +1,69 @@
+module forwarding_unit (
+	input [15:0] instr0,
+	input [15:0] instr1,
+	input [15:0] instr2,
+	input [15:0] rawd1, // register A write data (one stage ahead)
+	input [15:0] rbwd1, 
+	input [15:0] rawd2,
+	input [15:0] rbwd2,
+	output [15:0] rad0,
+	output [15:0] rbd0
+);
+
+	
+
+	function [31:0] rd0 
+	(
+		input [15:0] _instr0,
+		input [15:0] _instr1,
+		input [15:0] _instr2,
+		input [15:0] _rawd1,
+		input [15:0] _rbwd1, 
+		input [15:0] _rawd2,
+		input [15:0] _rbwd2
+	)
+		/*
+		load -> read & write
+		store -> read
+		loadimm -> write or read & write
+		ALU -> all
+		*/
+		
+		wire rarf0;
+		wire rbrf0;
+		wire rawf1;
+		wire rbwf1;
+		wire rawf2;
+		wire rbwf2;
+		
+		assign rawf1 = 1'b0;
+		assign rbwf1 = 1'b0;
+		assign rawf2 = 1'b0;
+		assign rbwf2 = 1'b0;
+		
+		/*if(instr0[15:14] == 2'b00)
+			rarf0 <= 1'b0;
+			rbrf0 <= 1'b1;
+		else if(instr[15:14] == 2'b01) begin
+			rarf0 <= 1'b1;
+			rbrf0 <= 1'b1;
+		end
+		else if(instr[15:14] == 2'b10) begin
+	
+		end else begin
+			if( instr[7:4] == 4'b0000 
+				|| instr[7:4] == 4'b0001 
+				|| instr[7:4] == 4'b0010
+				|| instr[7:4] == 4'b0011
+				|| instr[7:4] == 4'b0100
+			  ) begin
+			  
+				rarf0 <= 
+			  
+			end
+		end */
+	
+	
+	endfunction
+	
+endmodule
