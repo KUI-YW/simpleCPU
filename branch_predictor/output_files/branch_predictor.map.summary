@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Thu May 27 08:32:21 2021
+Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+Revision Name : branch_predictor
+Top-level Entity Name : branch_predictor
+Family : Cyclone IV E
+Total logic elements : 518
+    Total combinational functions : 518
+    Dedicated logic registers : 32
+Total registers : 32
+Total pins : 129
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

@@ -1,0 +1,16 @@
+Fitter Status : Successful - Wed May 26 22:20:12 2021
+Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+Revision Name : bunki_v2
+Top-level Entity Name : bunki_v2
+Family : Cyclone IV E
+Device : EP4CE30F23I7
+Timing Models : Final
+Total logic elements : 245 / 28,848 ( < 1 % )
+    Total combinational functions : 232 / 28,848 ( < 1 % )
+    Dedicated logic registers : 135 / 28,848 ( < 1 % )
+Total registers : 135
+Total pins : 62 / 329 ( 19 % )
+Total virtual pins : 0
+Total memory bits : 0 / 608,256 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 132 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )

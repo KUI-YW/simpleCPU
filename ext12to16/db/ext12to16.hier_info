@@ -1,0 +1,31 @@
+|ext12to16
+idata[0] => odata[0].DATAIN
+idata[1] => odata[1].DATAIN
+idata[2] => odata[2].DATAIN
+idata[3] => odata[3].DATAIN
+idata[4] => odata[4].DATAIN
+idata[5] => odata[5].DATAIN
+idata[6] => odata[6].DATAIN
+idata[7] => odata[7].DATAIN
+idata[8] => odata[8].DATAIN
+idata[9] => odata[9].DATAIN
+idata[10] => odata[10].DATAIN
+idata[11] => odata[11].DATAIN
+odata[0] <= idata[0].DB_MAX_OUTPUT_PORT_TYPE
+odata[1] <= idata[1].DB_MAX_OUTPUT_PORT_TYPE
+odata[2] <= idata[2].DB_MAX_OUTPUT_PORT_TYPE
+odata[3] <= idata[3].DB_MAX_OUTPUT_PORT_TYPE
+odata[4] <= idata[4].DB_MAX_OUTPUT_PORT_TYPE
+odata[5] <= idata[5].DB_MAX_OUTPUT_PORT_TYPE
+odata[6] <= idata[6].DB_MAX_OUTPUT_PORT_TYPE
+odata[7] <= idata[7].DB_MAX_OUTPUT_PORT_TYPE
+odata[8] <= idata[8].DB_MAX_OUTPUT_PORT_TYPE
+odata[9] <= idata[9].DB_MAX_OUTPUT_PORT_TYPE
+odata[10] <= idata[10].DB_MAX_OUTPUT_PORT_TYPE
+odata[11] <= idata[11].DB_MAX_OUTPUT_PORT_TYPE
+odata[12] <= <GND>
+odata[13] <= <GND>
+odata[14] <= <GND>
+odata[15] <= <GND>
+
+

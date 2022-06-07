@@ -1,0 +1,54 @@
+module compare_branch_checker
+(
+	input [15:0] instr,
+	input sign_flag,
+	input zero_flag,
+	input overflow_flag,
+	input [15:0] instr_address,
+	output [11:0] cmpb_address,
+	output is_cmpb_satisfied
+);
+
+	assign {cmpb_address,is_cmpb_satisfied} = f({instr, sign_flag, zero_flag, overflow_flag, instr_address});
+	
+	function [12:0] f(
+		input [15:0] instr,
+		input s,
+		input z,
+		input v,
+		input [15:0] instr_address,
+	);
+		begin
+			
+			reg [1:0] op1 = instr[15:14];
+			reg [2:0] op2 = instr[13:11];
+			reg [2:0] cond = instr[10:8];
+			reg [7:0] d = instr[7:0];
+			
+			reg is_satisfied = 1'b0;
+		
+			if(op1 == 2'b10 & op2 == 3'b111) begin
+				if(cond == 3'b000 & z) begin
+					is_satisfied = 1'b1;
+				end
+				else if(cond == 3'b001 & (s^v)) begin
+					is_satisfied = 1'b1;
+				end
+				else if(cond == 3'b010 & (z|(s^v))) begin
+					is_satisfied = 1'b1;
+				end
+				else if(cond == 3'b011 & (!z)) begin
+					is_satisfied = 1'b1;
+				end
+				else begin
+					is_satisfied = 1'b0;
+				end
+			end
+			else begin 
+				is_satisfied = 1'b0;
+			end
+		end
+		
+	endfunction
+	
+endmodule

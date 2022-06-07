@@ -1,0 +1,124 @@
+// Copyright (C) 2017  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench template that is freely editable to  
+// suit user's needs .Comments are provided in each section to help the user    
+// fill out necessary details.                                                  
+// *****************************************************************************
+// Generated on "05/27/2021 07:46:08"
+                                                                                
+// Verilog Test Bench template for design : top
+// 
+// Simulation tool : ModelSim-Altera (Verilog)
+// 
+
+`timescale 1 ps/ 1 ps
+module top_vlg_tst();
+// constants                                           
+// general purpose registers
+reg eachvec;
+// test vector input registers
+reg clock;
+reg exec;
+reg [15:0] in;
+reg reset;
+reg selector_clock;
+// wires                                               
+wire [11:0]  branch_dst;
+wire [15:0]  EX_instr;
+wire [15:0]  ID_instr;
+wire [15:0]  IF_instr;
+wire [15:0]  IF_instr_add;
+wire [7:0]  instr_LED;
+wire [3:0]  instr_selector;
+wire is_branch0;
+wire is_branch_hazard;
+wire is_data_stall_hazard;
+wire is_jump;
+wire is_out;
+wire is_predict_miss;
+wire [15:0]  MEM_instr;
+wire o;
+wire [15:0]  out;
+wire [7:0]  outdata_LED;
+wire [3:0]  outdata_selector;
+wire phase1;
+wire phase2;
+wire [11:0]  predict_dst;
+wire [15:0]  rad0;
+wire [15:0]  rad1;
+wire [15:0]  rbd0;
+wire s;
+wire [15:0]  WB_instr;
+wire [15:0]  WB_writedata;
+wire z;
+
+// assign statements (if any)                          
+top i1 (
+// port map - connection between master ports and signals/registers   
+	.branch_dst(branch_dst),
+	.clock(clock),
+	.EX_instr(EX_instr),
+	.exec(exec),
+	.ID_instr(ID_instr),
+	.IF_instr(IF_instr),
+	.IF_instr_add(IF_instr_add),
+	.in(in),
+	.instr_LED(instr_LED),
+	.instr_selector(instr_selector),
+	.is_branch0(is_branch0),
+	.is_branch_hazard(is_branch_hazard),
+	.is_data_stall_hazard(is_data_stall_hazard),
+	.is_jump(is_jump),
+	.is_out(is_out),
+	.is_predict_miss(is_predict_miss),
+	.MEM_instr(MEM_instr),
+	.o(o),
+	.out(out),
+	.outdata_LED(outdata_LED),
+	.outdata_selector(outdata_selector),
+	.phase1(phase1),
+	.phase2(phase2),
+	.predict_dst(predict_dst),
+	.rad0(rad0),
+	.rad1(rad1),
+	.rbd0(rbd0),
+	.reset(reset),
+	.s(s),
+	.selector_clock(selector_clock),
+	.WB_instr(WB_instr),
+	.WB_writedata(WB_writedata),
+	.z(z)
+);
+initial                                                
+begin                                                  
+// code that executes only once                        
+// insert code here --> begin                          
+                                                       
+// --> end                                             
+$display("Running testbench");                       
+end                                                    
+always                                                 
+// optional sensitivity list                           
+// @(event1 or event2 or .... eventn)                  
+begin                                                  
+// code executes for every event on sensitivity list   
+// insert code here --> begin                          
+                                                       
+@eachvec;                                              
+// --> end                                             
+end                                                    
+endmodule
+

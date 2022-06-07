@@ -1,0 +1,54 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/admin/Desktop/isle3/simple-team24/processor_second/test2/simulation/modelsim
+vtest2
+!s110 1620230243
+!i10b 1
+!s100 liAoNP74D1`bPd4j6R5aB0
+I`4fboNf3_W4U3mCSNfR3i1
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1620230050
+8test2_7_1200mv_100c_slow.vo
+Ftest2_7_1200mv_100c_slow.vo
+L0 31
+Z2 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1620230242.000000
+!s107 test2_7_1200mv_100c_slow.vo|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|test2_7_1200mv_100c_slow.vo|
+!i113 1
+Z3 o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+.
+Z4 tCvgOpt 0
+vtest2_vlg_tst
+!s110 1620230248
+!i10b 1
+!s100 GD=YY5gmMQiJV`>B`E7g@1
+I?CO]<NNW:_z68Yd4OZY8;1
+R1
+R0
+w1620230206
+8C:/Users/admin/Desktop/isle3/simple-team24/processor_second/test2/simulation/modelsim/test2_t1.vt
+FC:/Users/admin/Desktop/isle3/simple-team24/processor_second/test2/simulation/modelsim/test2_t1.vt
+L0 28
+R2
+r1
+!s85 0
+31
+!s108 1620230248.000000
+!s107 C:/Users/admin/Desktop/isle3/simple-team24/processor_second/test2/simulation/modelsim/test2_t1.vt|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/admin/Desktop/isle3/simple-team24/processor_second/test2/simulation/modelsim|C:/Users/admin/Desktop/isle3/simple-team24/processor_second/test2/simulation/modelsim/test2_t1.vt|
+!i113 1
+R3
+!s92 -vlog01compat -work work +incdir+C:/Users/admin/Desktop/isle3/simple-team24/processor_second/test2/simulation/modelsim
+R4

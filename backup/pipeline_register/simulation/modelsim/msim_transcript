@@ -1,0 +1,89 @@
+# Reading C:/intelFPGA_lite/17.1/modelsim_ase/tcl/vsim/pref.tcl
+# do pipeline_register_run_msim_gate_verilog.do
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work gate_work 
+# Copying C:/intelFPGA_lite/17.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+. {pipeline_register_7_1200mv_100c_slow.vo}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:18:43 on Jun 02,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+." pipeline_register_7_1200mv_100c_slow.vo 
+# -- Compiling module pipeline_register
+# -- Compiling module hard_block
+# 
+# Top level modules:
+# 	pipeline_register
+# End time: 22:18:43 on Jun 02,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/admin/Desktop/isle3/simple-team24/processor_final/pipeline_register/simulation/modelsim {C:/Users/admin/Desktop/isle3/simple-team24/processor_final/pipeline_register/simulation/modelsim/pipeline_register_test1.vt}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:18:43 on Jun 02,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/admin/Desktop/isle3/simple-team24/processor_final/pipeline_register/simulation/modelsim" C:/Users/admin/Desktop/isle3/simple-team24/processor_final/pipeline_register/simulation/modelsim/pipeline_register_test1.vt 
+# -- Compiling module pipeline_register_vlg_tst
+# 
+# Top level modules:
+# 	pipeline_register_vlg_tst
+# End time: 22:18:43 on Jun 02,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs="+acc"  test1
+# vsim -t 1ps "+transport_int_delays" "+transport_path_delays" -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs=""+acc"" test1 
+# Start time: 22:18:43 on Jun 02,2021
+# ** Error: (vsim-3170) Could not find 'test1'.
+#         Searched libraries:
+#             C:/intelFPGA_lite/17.1/modelsim_ase/altera/verilog/altera
+#             C:/intelFPGA_lite/17.1/modelsim_ase/altera/verilog/cycloneive
+#             C:/Users/admin/Desktop/isle3/simple-team24/processor_final/pipeline_register/simulation/modelsim/gate_work
+#             C:/Users/admin/Desktop/isle3/simple-team24/processor_final/pipeline_register/simulation/modelsim/gate_work
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./pipeline_register_run_msim_gate_verilog.do PAUSED at line 12
+vlog -vlog01compat -work work +incdir+C:/Users/admin/Desktop/isle3/simple-team24/processor_final/pipeline_register/simulation/modelsim C:/Users/admin/Desktop/isle3/simple-team24/processor_final/pipeline_register/simulation/modelsim/pipeline_register_test1.vt
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:19:07 on Jun 02,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/admin/Desktop/isle3/simple-team24/processor_final/pipeline_register/simulation/modelsim" C:/Users/admin/Desktop/isle3/simple-team24/processor_final/pipeline_register/simulation/modelsim/pipeline_register_test1.vt 
+# -- Compiling module pipeline_register_vlg_tst
+# 
+# Top level modules:
+# 	pipeline_register_vlg_tst
+# End time: 22:19:07 on Jun 02,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs=\"+acc\" gate_work.pipeline_register_vlg_tst
+# vsim -t 1ps "+transport_int_delays" "+transport_path_delays" -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs=""+acc"" gate_work.pipeline_register_vlg_tst 
+# Start time: 22:18:43 on Jun 02,2021
+# Loading work.pipeline_register_vlg_tst
+# Loading work.pipeline_register
+# Loading work.hard_block
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_clkctrl
+# Loading cycloneive_ver.cycloneive_mux41
+# Loading cycloneive_ver.cycloneive_ena_reg
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# Loading altera_ver.dffeas
+# Loading instances from pipeline_register_7_1200mv_100c_v_slow.sdo
+# Loading altera_ver.PRIM_GDFF_LOW
+# Loading timing data from pipeline_register_7_1200mv_100c_v_slow.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /pipeline_register_vlg_tst File: C:/Users/admin/Desktop/isle3/simple-team24/processor_final/pipeline_register/simulation/modelsim/pipeline_register_test1.vt
+add wave -position end  sim:/pipeline_register_vlg_tst/clock
+add wave -position end  sim:/pipeline_register_vlg_tst/eachvec
+add wave -position end  sim:/pipeline_register_vlg_tst/enable
+add wave -position end  sim:/pipeline_register_vlg_tst/exec
+add wave -position end  sim:/pipeline_register_vlg_tst/flush
+add wave -position end  sim:/pipeline_register_vlg_tst/idata1
+add wave -position end  sim:/pipeline_register_vlg_tst/is_halt_commanded
+add wave -position end  sim:/pipeline_register_vlg_tst/is_halt_now
+add wave -position end  sim:/pipeline_register_vlg_tst/odata1
+run
+# Running testbench
+# End time: 22:23:49 on Jun 02,2021, Elapsed time: 0:05:06
+# Errors: 1, Warnings: 0

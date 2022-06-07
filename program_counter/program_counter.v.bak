@@ -1,0 +1,39 @@
+module program_counter
+	(
+		input gclock, //global clock
+		input greset, //global reset
+		input [2:0] phase,
+		output reg [11:0] inst_address,
+		output reg is_too_many
+	);
+	
+	//PC+4でいいのか？
+	
+	reg [11:0] count = 12'b0000_0000_0000_0000;
+	reg [11:0] middle;
+	reg is_overflow = 0;
+	
+	always@(posedge gclock or negedge greset) begin 
+		if(!greset) begin 
+		  count <= 12'b0000_0000_0000;
+		end 
+		else begin 
+			if(phase == 3'b011) begin 
+				if(count < 12'b0111_1111_1100) begin 
+				  count <= count + 12'b0000_0000_0001;//+1すればメモリ側で4倍される。
+				  middle <= count;
+				  middle[11] <= 1;
+				  inst_address <= middle;
+				end 
+				else begin
+				  is_overflow <= 1'b1;
+				end
+			end
+		end
+	end
+	
+endmodule
+
+
+
+	

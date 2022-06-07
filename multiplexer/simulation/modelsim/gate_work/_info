@@ -1,0 +1,76 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/admin/Desktop/isle3/simple-team24/processor_second/multiplexer/simulation/modelsim
+vhard_block
+Z1 !s110 1620314318
+!i10b 1
+!s100 dz;G8C:8eST893A2:WfA10
+I5ej9oiCERgRg76ELXR]:Y3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1620314267
+Z4 8multiplexer_7_1200mv_100c_slow.vo
+Z5 Fmultiplexer_7_1200mv_100c_slow.vo
+L0 1024
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1620314318.000000
+Z8 !s107 multiplexer_7_1200mv_100c_slow.vo|
+Z9 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|multiplexer_7_1200mv_100c_slow.vo|
+!i113 1
+Z10 o-vlog01compat -work work
+Z11 !s92 -vlog01compat -work work +incdir+.
+Z12 tCvgOpt 0
+vmultiplexer
+R1
+!i10b 1
+!s100 3[RzT<Zal_5kEl=54VhbR3
+IC9m28;V>TQ2:lf=Y;6QP53
+R2
+R0
+R3
+R4
+R5
+L0 31
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+vmultiplexer_vlg_tst
+!s110 1620314416
+!i10b 1
+!s100 edT@k7>7LWf_V]BVkolH[2
+I^l?FkeZML?SVJlgf:WWbM2
+R2
+R0
+w1620314410
+8C:/Users/admin/Desktop/isle3/simple-team24/processor_second/multiplexer/simulation/modelsim/multiplexer_test1.vt
+FC:/Users/admin/Desktop/isle3/simple-team24/processor_second/multiplexer/simulation/modelsim/multiplexer_test1.vt
+L0 28
+R6
+r1
+!s85 0
+31
+!s108 1620314416.000000
+!s107 C:/Users/admin/Desktop/isle3/simple-team24/processor_second/multiplexer/simulation/modelsim/multiplexer_test1.vt|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/admin/Desktop/isle3/simple-team24/processor_second/multiplexer/simulation/modelsim|C:/Users/admin/Desktop/isle3/simple-team24/processor_second/multiplexer/simulation/modelsim/multiplexer_test1.vt|
+!i113 1
+R10
+!s92 -vlog01compat -work work +incdir+C:/Users/admin/Desktop/isle3/simple-team24/processor_second/multiplexer/simulation/modelsim
+R12

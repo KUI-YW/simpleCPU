@@ -1,0 +1,76 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/admin/Desktop/isle3/simple-team24/processor_final/branch_predictor/simulation/modelsim
+vbranch_predictor
+Z1 !s110 1622071302
+!i10b 1
+!s100 <5H8fiGl7n^QOcO[?8[A83
+I0TZDX:?Mn>ED]j<>ZjU7Z0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1622071191
+Z4 8branch_predictor_7_1200mv_100c_slow.vo
+Z5 Fbranch_predictor_7_1200mv_100c_slow.vo
+L0 31
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1622071302.000000
+Z8 !s107 branch_predictor_7_1200mv_100c_slow.vo|
+Z9 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|branch_predictor_7_1200mv_100c_slow.vo|
+!i113 1
+Z10 o-vlog01compat -work work
+Z11 !s92 -vlog01compat -work work +incdir+.
+Z12 tCvgOpt 0
+vbranch_predictor_vlg_tst
+!s110 1622071322
+!i10b 1
+!s100 ?H5@^lCfkDCCTXC:OSBbK0
+Izom5[2zmiZ;0?bMjJ>2[V3
+R2
+R0
+w1622068688
+8C:/Users/admin/Desktop/isle3/simple-team24/processor_final/branch_predictor/simulation/modelsim/branch_predictor_test1.vt
+FC:/Users/admin/Desktop/isle3/simple-team24/processor_final/branch_predictor/simulation/modelsim/branch_predictor_test1.vt
+L0 28
+R6
+r1
+!s85 0
+31
+!s108 1622071322.000000
+!s107 C:/Users/admin/Desktop/isle3/simple-team24/processor_final/branch_predictor/simulation/modelsim/branch_predictor_test1.vt|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/admin/Desktop/isle3/simple-team24/processor_final/branch_predictor/simulation/modelsim|C:/Users/admin/Desktop/isle3/simple-team24/processor_final/branch_predictor/simulation/modelsim/branch_predictor_test1.vt|
+!i113 1
+R10
+!s92 -vlog01compat -work work +incdir+C:/Users/admin/Desktop/isle3/simple-team24/processor_final/branch_predictor/simulation/modelsim
+R12
+vhard_block
+R1
+!i10b 1
+!s100 P?M9HG:3A7zbV3E8kFIXU1
+IPb=]lP6<Fze7W]B@70P2n3
+R2
+R0
+R3
+R4
+R5
+L0 12689
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
