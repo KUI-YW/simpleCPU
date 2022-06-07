@@ -1,0 +1,13 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/admin/Desktop/isle3/simple-team24/processor_second/test1/test1.bdf
+source_file = 1, C:/Users/admin/Desktop/isle3/simple-team24/processor_second/test1/db/test1.cbx.xml
+design_name = test1
+instance = comp, \q~output , q~output, test1, 1
+instance = comp, \clock~input , clock~input, test1, 1
+instance = comp, \clock~inputclkctrl , clock~inputclkctrl, test1, 1
+instance = comp, \inst~feeder , inst~feeder, test1, 1
+instance = comp, \inst2~0 , inst2~0, test1, 1
+design_name = hard_block
+instance = comp, \~ALTERA_ASDO_DATA1~~ibuf , ~ALTERA_ASDO_DATA1~~ibuf, hard_block, 1
+instance = comp, \~ALTERA_FLASH_nCE_nCSO~~ibuf , ~ALTERA_FLASH_nCE_nCSO~~ibuf, hard_block, 1
+instance = comp, \~ALTERA_DATA0~~ibuf , ~ALTERA_DATA0~~ibuf, hard_block, 1

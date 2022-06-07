@@ -1,0 +1,293 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "instr_add[0]",
+					"strict" : false
+				},
+				{
+					"name" : "instr_add[1]",
+					"strict" : false
+				},
+				{
+					"name" : "instr_add[2]",
+					"strict" : false
+				},
+				{
+					"name" : "instr_add[3]",
+					"strict" : false
+				},
+				{
+					"name" : "instr_add[4]",
+					"strict" : false
+				},
+				{
+					"name" : "instr_add[5]",
+					"strict" : false
+				},
+				{
+					"name" : "instr_add[6]",
+					"strict" : false
+				},
+				{
+					"name" : "instr_add[7]",
+					"strict" : false
+				},
+				{
+					"name" : "instr_add[8]",
+					"strict" : false
+				},
+				{
+					"name" : "instr_add[9]",
+					"strict" : false
+				},
+				{
+					"name" : "instr_add[10]",
+					"strict" : false
+				},
+				{
+					"name" : "instr_add[11]",
+					"strict" : false
+				},
+				{
+					"name" : "instr_add_is_overflow",
+					"strict" : false
+				},
+				{
+					"name" : "branch_hazard_instr_add[0]",
+					"strict" : false
+				},
+				{
+					"name" : "jump_instr_add[0]",
+					"strict" : false
+				},
+				{
+					"name" : "is_jump",
+					"strict" : false
+				},
+				{
+					"name" : "is_cmpb_satisfied",
+					"strict" : false
+				},
+				{
+					"name" : "branch_predict_add[0]",
+					"strict" : false
+				},
+				{
+					"name" : "is_branch_predict",
+					"strict" : false
+				},
+				{
+					"name" : "cmpb_instr_add[0]",
+					"strict" : false
+				},
+				{
+					"name" : "is_branch_hazard_stall",
+					"strict" : false
+				},
+				{
+					"name" : "is_data_hazard_stall",
+					"strict" : false
+				},
+				{
+					"name" : "enable",
+					"strict" : false
+				},
+				{
+					"name" : "exec",
+					"strict" : false
+				},
+				{
+					"name" : "is_halt_commanded",
+					"strict" : false
+				},
+				{
+					"name" : "clock",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "branch_hazard_instr_add[1]",
+					"strict" : false
+				},
+				{
+					"name" : "branch_predict_add[1]",
+					"strict" : false
+				},
+				{
+					"name" : "jump_instr_add[1]",
+					"strict" : false
+				},
+				{
+					"name" : "cmpb_instr_add[1]",
+					"strict" : false
+				},
+				{
+					"name" : "branch_hazard_instr_add[2]",
+					"strict" : false
+				},
+				{
+					"name" : "jump_instr_add[2]",
+					"strict" : false
+				},
+				{
+					"name" : "branch_predict_add[2]",
+					"strict" : false
+				},
+				{
+					"name" : "cmpb_instr_add[2]",
+					"strict" : false
+				},
+				{
+					"name" : "branch_hazard_instr_add[3]",
+					"strict" : false
+				},
+				{
+					"name" : "branch_predict_add[3]",
+					"strict" : false
+				},
+				{
+					"name" : "jump_instr_add[3]",
+					"strict" : false
+				},
+				{
+					"name" : "cmpb_instr_add[3]",
+					"strict" : false
+				},
+				{
+					"name" : "branch_hazard_instr_add[4]",
+					"strict" : false
+				},
+				{
+					"name" : "jump_instr_add[4]",
+					"strict" : false
+				},
+				{
+					"name" : "branch_predict_add[4]",
+					"strict" : false
+				},
+				{
+					"name" : "cmpb_instr_add[4]",
+					"strict" : false
+				},
+				{
+					"name" : "branch_hazard_instr_add[5]",
+					"strict" : false
+				},
+				{
+					"name" : "branch_predict_add[5]",
+					"strict" : false
+				},
+				{
+					"name" : "jump_instr_add[5]",
+					"strict" : false
+				},
+				{
+					"name" : "cmpb_instr_add[5]",
+					"strict" : false
+				},
+				{
+					"name" : "branch_hazard_instr_add[6]",
+					"strict" : false
+				},
+				{
+					"name" : "jump_instr_add[6]",
+					"strict" : false
+				},
+				{
+					"name" : "branch_predict_add[6]",
+					"strict" : false
+				},
+				{
+					"name" : "cmpb_instr_add[6]",
+					"strict" : false
+				},
+				{
+					"name" : "branch_hazard_instr_add[7]",
+					"strict" : false
+				},
+				{
+					"name" : "branch_predict_add[7]",
+					"strict" : false
+				},
+				{
+					"name" : "jump_instr_add[7]",
+					"strict" : false
+				},
+				{
+					"name" : "cmpb_instr_add[7]",
+					"strict" : false
+				},
+				{
+					"name" : "branch_hazard_instr_add[8]",
+					"strict" : false
+				},
+				{
+					"name" : "jump_instr_add[8]",
+					"strict" : false
+				},
+				{
+					"name" : "branch_predict_add[8]",
+					"strict" : false
+				},
+				{
+					"name" : "cmpb_instr_add[8]",
+					"strict" : false
+				},
+				{
+					"name" : "branch_hazard_instr_add[9]",
+					"strict" : false
+				},
+				{
+					"name" : "branch_predict_add[9]",
+					"strict" : false
+				},
+				{
+					"name" : "jump_instr_add[9]",
+					"strict" : false
+				},
+				{
+					"name" : "cmpb_instr_add[9]",
+					"strict" : false
+				},
+				{
+					"name" : "branch_hazard_instr_add[10]",
+					"strict" : false
+				},
+				{
+					"name" : "jump_instr_add[10]",
+					"strict" : false
+				},
+				{
+					"name" : "branch_predict_add[10]",
+					"strict" : false
+				},
+				{
+					"name" : "cmpb_instr_add[10]",
+					"strict" : false
+				},
+				{
+					"name" : "branch_hazard_instr_add[11]",
+					"strict" : false
+				},
+				{
+					"name" : "jump_instr_add[11]",
+					"strict" : false
+				},
+				{
+					"name" : "branch_predict_add[11]",
+					"strict" : false
+				},
+				{
+					"name" : "cmpb_instr_add[11]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

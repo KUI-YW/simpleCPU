@@ -1,0 +1,100 @@
+// Copyright (C) 2017  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench template that is freely editable to  
+// suit user's needs .Comments are provided in each section to help the user    
+// fill out necessary details.                                                  
+// *****************************************************************************
+// Generated on "05/20/2021 17:05:27"
+                                                                                
+// Verilog Test Bench template for design : bunki_v2
+// 
+// Simulation tool : ModelSim-Altera (Verilog)
+// 
+
+`timescale 1 ns/ 1 ps
+module bunki_v2_vlg_tst();
+// constants                                           
+// general purpose registers
+reg eachvec;
+// test vector input registers
+reg clock;
+reg inminusflag;
+reg inoverflow;
+reg [15:0] inst;
+reg inzeroflag;
+reg [11:0] pc;
+reg reset;
+// wires                                               
+wire [1:0]  flash;
+wire [11:0]  resultpc;
+
+// assign statements (if any)                          
+bunki_v2 i1 (
+// port map - connection between master ports and signals/registers   
+	.clock(clock),
+	.flash(flash),
+	.inminusflag(inminusflag),
+	.inoverflow(inoverflow),
+	.inst(inst),
+	.inzeroflag(inzeroflag),
+	.pc(pc),
+	.reset(reset),
+	.resultpc(resultpc)
+);
+initial                                                
+begin                                                  
+// code that executes only once                        
+// insert code here --> begin                          
+ clock <=0;
+inminusflag <=1'b0;
+inoverflow <=1'b0;
+inzeroflag <=1'b0;
+inst <= 16'b0000000000000000;
+pc <=12'b000000000000;
+reset <=1'b0;                                      
+// --> end                                             
+$display("Running testbench");                       
+end  
+always begin
+#100
+clock<= ~clock;
+end
+                                                  
+always                                                 
+// optional sensitivity list                           
+// @(event1 or event2 or .... eventn)                  
+begin                                                  
+// code executes for every event on sensitivity list   
+// insert code here --> begin                          
+#50
+reset <= 1'b1;
+#50
+reset <=1'b0;
+#50
+inst <= 16'b1100101101010000;
+pc <=  12'b000000000001;
+#200
+inst <=16'b1011100000001000;
+pc <=12'b0000000000000010;
+#200
+inst <=16'b0000000000000000;
+inzeroflag <= 1'b1;
+                                                       
+@eachvec;                                              
+// --> end                                             
+end                                                    
+endmodule
+

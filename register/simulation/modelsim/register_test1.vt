@@ -1,0 +1,136 @@
+// Copyright (C) 2017  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench template that is freely editable to  
+// suit user's needs .Comments are provided in each section to help the user    
+// fill out necessary details.                                                  
+// *****************************************************************************
+// Generated on "05/07/2021 12:23:34"
+                                                                                
+// Verilog Test Bench template for design : register
+// 
+// Simulation tool : ModelSim-Altera (Verilog)
+// 
+
+`timescale 1 ns/ 1 ps
+module register_vlg_tst();
+// constants                                           
+// general purpose registers
+reg eachvec;
+// test vector input registers
+reg clock;
+reg [2:0] radd1;
+reg [2:0] radd2;
+reg reset;
+reg [2:0] wadd;
+reg [15:0] wdata;
+reg wflag;
+// wires                                               
+wire [15:0]  rdata1;
+wire [15:0]  rdata2;
+
+// assign statements (if any)                          
+register i1 (
+// port map - connection between master ports and signals/registers   
+	.clock(clock),
+	.radd1(radd1),
+	.radd2(radd2),
+	.rdata1(rdata1),
+	.rdata2(rdata2),
+	.reset(reset),
+	.wadd(wadd),
+	.wdata(wdata),
+	.wflag(wflag)
+);
+initial                                                
+begin                                                  
+// code that executes only once                        
+// insert code here --> begin                          
+clock <= 0;
+reset <= 1;
+wflag <= 0;
+
+wdata <= 16'b0000_0000_0000_0000;
+wadd <= 3'b000;
+
+radd1 <= 3'b000;
+radd2 <= 3'b001;
+                                         
+// --> end                                             
+$display("Running testbench");                       
+end     
+
+                                               
+always                                                 
+// optional sensitivity list                           
+// @(event1 or event2 or .... eventn)                  
+begin                                                  
+// code executes for every event on sensitivity list   
+// insert code here --> begin    
+#100    
+reset <= 1;                  
+clock <= 0; 
+wflag <= 1;
+wdata <= 16'b0000_0000_0000_1111;
+#100                  
+clock <= 1; 
+wflag <= 1;
+#100     
+clock <= 1;      
+wflag <= 0;
+
+#100                      
+clock <= 0; 
+wflag <= 1;
+wdata <= 16'b0000_0000_1111_0000;
+#100                  
+clock <= 1; 
+wflag <= 1;
+wadd <= 3'b001;
+#100     
+clock <= 1;      
+wflag <= 0;
+
+#100                      
+clock <= 0; 
+wflag <= 1;
+wdata <= 16'b0000_1111_0000_0000;
+#100                  
+clock <= 1; 
+wflag <= 1;
+wadd <= 3'b010;
+#100     
+clock <= 1;      
+wflag <= 0;
+
+
+#100                      
+clock <= 0; 
+wflag <= 0;
+reset <= 0;
+#100                  
+clock <= 1; 
+wflag <= 1;
+#100     
+clock <= 1;      
+wflag <= 0;
+
+
+                         
+//@eachvec;                                              
+// --> end                                             
+end                                                    
+endmodule
+

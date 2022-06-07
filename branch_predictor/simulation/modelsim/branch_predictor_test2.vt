@@ -1,0 +1,129 @@
+// Copyright (C) 2017  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench template that is freely editable to  
+// suit user's needs .Comments are provided in each section to help the user    
+// fill out necessary details.                                                  
+// *****************************************************************************
+// Generated on "05/25/2021 23:16:38"
+                                                                                
+// Verilog Test Bench template for design : branch_predictor
+// 
+// Simulation tool : ModelSim-Altera (Verilog)
+// 
+
+`timescale 1 ns/ 1 ps
+module branch_predictor_vlg_tst();
+// constants                                           
+// general purpose registers
+reg eachvec;
+// test vector input registers
+reg [15:0] branch_src0;
+reg [15:0] branch_src1;
+reg [15:0] branch_src2;
+reg clock;
+reg enable;
+reg exec;
+reg [15:0] instr0;
+reg [15:0] instr1;
+reg [15:0] instr2;
+reg overflowflag;
+reg reset;
+reg signflag;
+reg zeroflag;
+// wires                                               
+wire [11:0]  branch_dst;
+wire [1:0]  hist2;
+wire is_correct;
+wire [11:0]  predict_dst;
+
+// assign statements (if any)                          
+branch_predictor i1 (
+// port map - connection between master ports and signals/registers   
+	.branch_dst(branch_dst),
+	.branch_src0(branch_src0),
+	.branch_src1(branch_src1),
+	.branch_src2(branch_src2),
+	.clock(clock),
+	.enable(enable),
+	.exec(exec),
+	.hist2(hist2),
+	.instr0(instr0),
+	.instr1(instr1),
+	.instr2(instr2),
+	.is_correct(is_correct),
+	.overflowflag(overflowflag),
+	.predict_dst(predict_dst),
+	.reset(reset),
+	.signflag(signflag),
+	.zeroflag(zeroflag)
+);
+initial                                                
+begin                                                  
+// code that executes only once                        
+// insert code here --> begin                          
+clock <= 1'b0;
+reset <= 1'b0;
+exec <= 1'b0;
+
+enable <= 1'b0;
+
+instr0 <= 16'b10_111_010_00110011;
+instr1 <= 16'b10_111_001_00110011;
+instr2 <= 16'b10_111_000_00110011;
+
+branch_src0 <=16'b0000_0000_0000_0011;
+branch_src1 <=16'b0000_0000_0000_1100;
+branch_src2 <=16'b0000_0000_0000_1111;
+
+signflag <= 1'b0;
+zeroflag <= 1'b1;
+overflowflag <= 1'b0;
+                                                                                 
+// --> end                                             
+$display("Running testbench");                       
+end      
+                                              
+always                                                 
+// optional sensitivity list                           
+// @(event1 or event2 or .... eventn)                  
+begin                                                  
+// code executes for every event on sensitivity list   
+// insert code here --> begin                          
+#50 
+clock <= ~clock;                                                   
+//@eachvec;                                              
+// --> end                                             
+end                                 
+
+always                                                 
+// optional sensitivity list                           
+// @(event1 or event2 or .... eventn)                  
+begin                                                  
+// code executes for every event on sensitivity list   
+// insert code here --> begin      
+#10                    
+#50 
+enable <= ~enable;
+#50 
+enable <= ~enable;
+#40                                                   
+//@eachvec;                                              
+// --> end                                             
+end                                 
+
+                                
+endmodule
+

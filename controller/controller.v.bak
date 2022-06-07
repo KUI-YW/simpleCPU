@@ -1,0 +1,41 @@
+module controller
+	(
+		input gclock,
+		input greset,
+		input [2:0] phase,
+		input [15:0] inst,
+		output reg ALUsource,
+		output reg [3:0] ALUop,
+		output reg memRead,
+		output reg memWrite,
+		output reg memToReg,
+		output reg regWrite
+	);
+
+	reg [1:0] mssb; //The most and the second most significant bit 
+	always@(posedge gclock) begin
+		mssb <= inst[15:14];
+		if(mssb == 2'b00) begin //load
+			ALUsource <= 1'b1;
+			ALUop <= 4'b0000;
+			memToReg <= 1'b1;
+			memRead <= 1'b1;
+			memWrite <= 1'b0;
+			regWrite <= 1'b1;
+		end else if(mssb == 2'b01) begin
+			ALUsource <= 1'b1;
+			ALUop <= 4'b0000;
+			memToReg <= 1'b0;
+			memRead <= 1'b0;
+			memWrite <= 1'b1;
+			regWrite <= 1'b0;
+		end else if(mssb == 2'b11) begin 
+			ALUsource <= 1'b0;
+			ALUop <= inst[7:4];
+			memToReg <= 1'b1;
+			memRead <= 1'b0;
+			memWrite <= 1'b0;
+			regWrite <= 1'b1;
+		end 
+	end
+endmodule

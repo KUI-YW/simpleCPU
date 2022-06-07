@@ -1,0 +1,185 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "cmpb_address[0]",
+					"strict" : false
+				},
+				{
+					"name" : "cmpb_address[1]",
+					"strict" : false
+				},
+				{
+					"name" : "cmpb_address[2]",
+					"strict" : false
+				},
+				{
+					"name" : "cmpb_address[3]",
+					"strict" : false
+				},
+				{
+					"name" : "cmpb_address[4]",
+					"strict" : false
+				},
+				{
+					"name" : "cmpb_address[5]",
+					"strict" : false
+				},
+				{
+					"name" : "cmpb_address[6]",
+					"strict" : false
+				},
+				{
+					"name" : "cmpb_address[7]",
+					"strict" : false
+				},
+				{
+					"name" : "cmpb_address[8]",
+					"strict" : false
+				},
+				{
+					"name" : "cmpb_address[9]",
+					"strict" : false
+				},
+				{
+					"name" : "cmpb_address[10]",
+					"strict" : false
+				},
+				{
+					"name" : "cmpb_address[11]",
+					"strict" : false
+				},
+				{
+					"name" : "is_cmpb_satisfied",
+					"strict" : false
+				},
+				{
+					"name" : "instr_address[0]",
+					"strict" : false
+				},
+				{
+					"name" : "instr[0]",
+					"strict" : false
+				},
+				{
+					"name" : "instr[15]",
+					"strict" : false
+				},
+				{
+					"name" : "sign_flag",
+					"strict" : false
+				},
+				{
+					"name" : "overflow_flag",
+					"strict" : false
+				},
+				{
+					"name" : "instr[8]",
+					"strict" : false
+				},
+				{
+					"name" : "instr[9]",
+					"strict" : false
+				},
+				{
+					"name" : "zero_flag",
+					"strict" : false
+				},
+				{
+					"name" : "instr[11]",
+					"strict" : false
+				},
+				{
+					"name" : "instr[12]",
+					"strict" : false
+				},
+				{
+					"name" : "instr[13]",
+					"strict" : false
+				},
+				{
+					"name" : "instr[10]",
+					"strict" : false
+				},
+				{
+					"name" : "instr[14]",
+					"strict" : false
+				},
+				{
+					"name" : "instr_address[1]",
+					"strict" : false
+				},
+				{
+					"name" : "instr[1]",
+					"strict" : false
+				},
+				{
+					"name" : "instr_address[2]",
+					"strict" : false
+				},
+				{
+					"name" : "instr[2]",
+					"strict" : false
+				},
+				{
+					"name" : "instr_address[3]",
+					"strict" : false
+				},
+				{
+					"name" : "instr[3]",
+					"strict" : false
+				},
+				{
+					"name" : "instr_address[4]",
+					"strict" : false
+				},
+				{
+					"name" : "instr[4]",
+					"strict" : false
+				},
+				{
+					"name" : "instr_address[5]",
+					"strict" : false
+				},
+				{
+					"name" : "instr[5]",
+					"strict" : false
+				},
+				{
+					"name" : "instr_address[6]",
+					"strict" : false
+				},
+				{
+					"name" : "instr[6]",
+					"strict" : false
+				},
+				{
+					"name" : "instr_address[7]",
+					"strict" : false
+				},
+				{
+					"name" : "instr[7]",
+					"strict" : false
+				},
+				{
+					"name" : "instr_address[8]",
+					"strict" : false
+				},
+				{
+					"name" : "instr_address[9]",
+					"strict" : false
+				},
+				{
+					"name" : "instr_address[10]",
+					"strict" : false
+				},
+				{
+					"name" : "instr_address[11]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

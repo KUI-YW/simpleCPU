@@ -1,0 +1,89 @@
+-- Copyright (C) 2017  Intel Corporation. All rights reserved.
+-- Your use of Intel Corporation's design tools, logic functions 
+-- and other software and tools, and its AMPP partner logic 
+-- functions, and any output files from any of the foregoing 
+-- (including device programming or simulation files), and any 
+-- associated documentation or information are expressly subject 
+-- to the terms and conditions of the Intel Program License 
+-- Subscription Agreement, the Intel Quartus Prime License Agreement,
+-- the Intel FPGA IP License Agreement, or other applicable license
+-- agreement, including, without limitation, that your use is for
+-- the sole purpose of programming logic devices manufactured by
+-- Intel and sold by Intel or its authorized distributors.  Please
+-- refer to the applicable agreement for further details.
+
+-- Quartus Prime generated Memory Initialization File (.mif)
+
+WIDTH=16;
+DEPTH=4096;
+
+ADDRESS_RADIX=HEX;
+DATA_RADIX=BIN;
+
+CONTENT BEGIN
+	0000  :   0000000000000100;
+	0001  :   0000000000000000;
+	0002  :   0000000000000010;
+	[0003..0004]  :   0011111111111111;
+	0005  :   0000000000000010;
+	0006  :   0000000000000000;
+	0007  :   0000000000001000;
+	[0008..000A]  :   0011111111111111;
+	000B  :   0000000000000000;
+	000C  :   0000000000100000;
+	[000D..000E]  :   0011111111111111;
+	000F  :   0000000000100000;
+	0010  :   0000000000000000;
+	0011  :   1111111111111111;
+	[0012..001B]  :   0000000000000000;
+	001C  :   1111111111111111;
+	001D  :   0000000000000010;
+	001E  :   0000000000000011;
+	001F  :   0000000000000100;
+	0020  :   0000000000000101;
+	0021  :   0000000000000110;
+	0022  :   0000000000000111;
+	0023  :   0000000000001000;
+	0024  :   0000000000001001;
+	0025  :   0000000000001010;
+	0026  :   0000000000001011;
+	0027  :   0000000000001100;
+	0028  :   0000000000001101;
+	0029  :   0000000000001110;
+	002A  :   0000000000001111;
+	002B  :   0000000000010000;
+	[002C..081B]  :   0000000000000000;
+	081C  :   0000100000000000;
+	081D  :   1100100111010000;
+	081E  :   0001000000000001;
+	081F  :   1101001011010000;
+	0820  :   1101000100000000;
+	0821  :   1100100111010000;
+	0822  :   1101000100000000;
+	0823  :   1100100111010000;
+	0824  :   1101000100000000;
+	0825  :   1100100111010000;
+	0826  :   1101000100000000;
+	0827  :   1100100111010000;
+	0828  :   1101000100000000;
+	0829  :   1100100111010000;
+	082A  :   1101000100000000;
+	082B  :   1100100111010000;
+	082C  :   1101000100000000;
+	082D  :   1100100111010000;
+	082E  :   1101000100000000;
+	082F  :   1100100111010000;
+	0830  :   1101000100000000;
+	0831  :   1100100111010000;
+	0832  :   1101000100000000;
+	0833  :   1100100111010000;
+	0834  :   1101000100000000;
+	0835  :   1100100111010000;
+	0836  :   1101000100000000;
+	0837  :   1100100111010000;
+	0838  :   1101000100000000;
+	0839  :   1100100111010000;
+	083A  :   1101000100000000;
+	083B  :   1100100111010000;
+	[083C..0FFF]  :   0000000000000000;
+END;

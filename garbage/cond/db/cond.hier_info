@@ -1,0 +1,21 @@
+|cond
+cond[0] => Equal0.IN2
+cond[0] => Equal1.IN0
+cond[0] => Equal2.IN2
+cond[0] => Equal3.IN1
+cond[1] => Equal0.IN1
+cond[1] => Equal1.IN2
+cond[1] => Equal2.IN0
+cond[1] => Equal3.IN0
+cond[2] => Equal0.IN0
+cond[2] => Equal1.IN1
+cond[2] => Equal2.IN1
+cond[2] => Equal3.IN2
+zeroflag => check.IN1
+zeroflag => check.DATAB
+zeroflag => check.DATAB
+overflow => check.IN0
+minusflag => check.IN1
+flag <= check.DB_MAX_OUTPUT_PORT_TYPE
+
+

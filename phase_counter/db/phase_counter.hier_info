@@ -1,0 +1,16 @@
+|phase_counter
+clock => phase3~reg0.CLK
+clock => phase2~reg0.CLK
+clock => phase1~reg0.CLK
+clock => count~2.DATAIN
+reset => count.OUTPUTSELECT
+reset => count.OUTPUTSELECT
+reset => phase3~reg0.ENA
+reset => phase2~reg0.ENA
+reset => phase1~reg0.ENA
+exec => ~NO_FANOUT~
+phase1 <= phase1~reg0.DB_MAX_OUTPUT_PORT_TYPE
+phase2 <= phase2~reg0.DB_MAX_OUTPUT_PORT_TYPE
+phase3 <= phase3~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

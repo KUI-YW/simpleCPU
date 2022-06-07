@@ -1,0 +1,114 @@
+module (
+	input clock,
+	input reset,
+	input enable,
+	input [11:0] branch_src,
+	output [11:0] predict_dst,
+	output [11:0] branch_dst
+);
+
+	assign predict_instr_address = predict(instr,branch_src);
+	
+	function [11:0] predict(
+		input [15:0] instr,
+		input [11:0] branch_src
+	);
+		begin
+		
+			reg [1:0] op1 = instr[15:14];
+			reg [2:0] op2 = instr[13:11];
+			reg [2:0] cond = instr[10:8];
+			reg [7:0] d = instr[7:0];
+			reg [11:0] exd = (d[7] ? {4'b1111,d} : {4'b0000,d});
+		
+			if( op1 == 2'b10 
+				&& op2 == 3'b111
+				&& (cond == 3'b000 || cond == 3'b001 || cond == 3'b010 || cond == 3'b011)
+			) begin
+				if(predict_satis(branch_src)) begin
+					predict_address = branch_src + 12'h001 + exd;
+				end
+				else begin
+					predict_address = branch_src + 12'h001;
+				end
+			end 
+			else begin
+				predict_address = branch_src + 12'h001;
+			end
+		end
+	endfunction
+	
+	reg [1:0] history [15:0];
+	
+	function predict_satis(
+		input [11:0] branch_src
+	);	 
+		begin 
+			reg	[3:0] instr_add_4bit = branch_src[3:0];
+			case (history[instr_add_4bit])
+				2'b00 : predict_satis = 1'b0;
+				2'b01 : predict_satis = 1'b0;
+				2'b10 : predict_satis = 1'b1;
+				2'b11 : predict_satis = 1'b1;
+				default : predict_satis = 1'b0;
+			endcase
+		end
+	endfunction
+	
+
+	integer i;
+	always @(clock) begin
+		if(reset) begin
+			for(i = 4'b0000; i <= 4'b1111; i = i + 4'b0001) begin
+				history[i] <= 2'b00;
+			end
+		end 
+		else if(enable) begin
+			
+		end
+		else begin
+			//do nothing
+		end
+	end
+	
+	function [12:0] correct_address(
+		input [15:0] instr,
+		input s,
+		input z,
+		input v,
+		input [15:0] instr_address
+	);
+		begin
+			
+			reg [1:0] op1 = instr[15:14];
+			reg [2:0] op2 = instr[13:11];
+			reg [2:0] cond = instr[10:8];
+			reg signed [7:0] d = instr[7:0];
+			reg signed [11:0] exd = (d[7] ? {4'b1111,d} : {4'b0000,d});
+			reg [11:0] pc = instr_address[11:0];
+			
+			reg is_satisfied = 1'b0;
+			reg [11:0] branch_address = 12'h000;
+		
+			if(op1 == 2'b10 & op2 == 3'b111) begin
+				case (cond)
+					3'b000 : is_satisfied = z;
+					3'b001 : is_satisfied = (s ^ v);
+					3'b010 : is_satisfied = (z | (s ^ v));
+					3'b011 : is_satisfied = (! z);
+					default : is_satisfied = 1'b0;
+				endcase
+			end
+			else begin 
+				is_satisfied = 1'b0;
+			end
+			
+			branch_address = (is_satisfied ? (pc + 1'b1 + exd) : 12'h000);  
+			
+			f = {branch_address,is_satisfied};
+			
+		end
+		
+	endfunction
+	
+endmodule

@@ -1,0 +1,74 @@
+-- Copyright (C) 2017  Intel Corporation. All rights reserved.
+-- Your use of Intel Corporation's design tools, logic functions 
+-- and other software and tools, and its AMPP partner logic 
+-- functions, and any output files from any of the foregoing 
+-- (including device programming or simulation files), and any 
+-- associated documentation or information are expressly subject 
+-- to the terms and conditions of the Intel Program License 
+-- Subscription Agreement, the Intel Quartus Prime License Agreement,
+-- the Intel FPGA IP License Agreement, or other applicable license
+-- agreement, including, without limitation, that your use is for
+-- the sole purpose of programming logic devices manufactured by
+-- Intel and sold by Intel or its authorized distributors.  Please
+-- refer to the applicable agreement for further details.
+
+-- Quartus Prime generated Memory Initialization File (.mif)
+
+WIDTH=16;
+DEPTH=4096;
+
+ADDRESS_RADIX=HEX;
+DATA_RADIX=BIN;
+
+CONTENT BEGIN
+	0000  :   1111111111111111;
+	0001  :   0000000000000010;
+	0002  :   0000000000000011;
+	0003  :   0000000000000100;
+	0004  :   0000000000000101;
+	0005  :   0000000000000110;
+	0006  :   0000000000000111;
+	0007  :   0000000000001000;
+	0008  :   0000000000001001;
+	0009  :   0000000000001010;
+	000A  :   0000000000001011;
+	000B  :   0000000000001100;
+	000C  :   0000000000001101;
+	000D  :   0000000000001110;
+	000E  :   0000000000001111;
+	000F  :   0000000000010000;
+	[0010..07FF]  :   0000000000000000;
+	0800  :   0000100000000000;
+	0801  :   1100100111010000;
+	0802  :   0001000000000001;
+	0803  :   1101001011010000;
+	0804  :   1101000100000000;
+	0805  :   1100100111010000;
+	0806  :   1101000100000000;
+	0807  :   1100100111010000;
+	0808  :   1101000100000000;
+	0809  :   1100100111010000;
+	080A  :   1101000100000000;
+	080B  :   1100100111010000;
+	080C  :   1101000100000000;
+	080D  :   1100100111010000;
+	080E  :   1101000100000000;
+	080F  :   1100100111010000;
+	0810  :   1101000100000000;
+	0811  :   1100100111010000;
+	0812  :   1101000100000000;
+	0813  :   1100100111010000;
+	0814  :   1101000100000000;
+	0815  :   1100100111010000;
+	0816  :   1101000100000000;
+	0817  :   1100100111010000;
+	0818  :   1101000100000000;
+	0819  :   1100100111010000;
+	081A  :   1101000100000000;
+	081B  :   1100100111010000;
+	081C  :   1101000100000000;
+	081D  :   1100100111010000;
+	081E  :   1101000100000000;
+	081F  :   1100100111010000;
+	[0820..0FFF]  :   0000000000000000;
+END;

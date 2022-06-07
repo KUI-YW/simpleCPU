@@ -1,0 +1,6 @@
+|test1
+q <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+clock => inst2.CLK
+clock => inst.CLK
+
+
