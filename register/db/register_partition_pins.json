@@ -1,0 +1,257 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "rdata1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "rdata1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "rdata1[2]",
+					"strict" : false
+				},
+				{
+					"name" : "rdata1[3]",
+					"strict" : false
+				},
+				{
+					"name" : "rdata1[4]",
+					"strict" : false
+				},
+				{
+					"name" : "rdata1[5]",
+					"strict" : false
+				},
+				{
+					"name" : "rdata1[6]",
+					"strict" : false
+				},
+				{
+					"name" : "rdata1[7]",
+					"strict" : false
+				},
+				{
+					"name" : "rdata1[8]",
+					"strict" : false
+				},
+				{
+					"name" : "rdata1[9]",
+					"strict" : false
+				},
+				{
+					"name" : "rdata1[10]",
+					"strict" : false
+				},
+				{
+					"name" : "rdata1[11]",
+					"strict" : false
+				},
+				{
+					"name" : "rdata1[12]",
+					"strict" : false
+				},
+				{
+					"name" : "rdata1[13]",
+					"strict" : false
+				},
+				{
+					"name" : "rdata1[14]",
+					"strict" : false
+				},
+				{
+					"name" : "rdata1[15]",
+					"strict" : false
+				},
+				{
+					"name" : "rdata2[0]",
+					"strict" : false
+				},
+				{
+					"name" : "rdata2[1]",
+					"strict" : false
+				},
+				{
+					"name" : "rdata2[2]",
+					"strict" : false
+				},
+				{
+					"name" : "rdata2[3]",
+					"strict" : false
+				},
+				{
+					"name" : "rdata2[4]",
+					"strict" : false
+				},
+				{
+					"name" : "rdata2[5]",
+					"strict" : false
+				},
+				{
+					"name" : "rdata2[6]",
+					"strict" : false
+				},
+				{
+					"name" : "rdata2[7]",
+					"strict" : false
+				},
+				{
+					"name" : "rdata2[8]",
+					"strict" : false
+				},
+				{
+					"name" : "rdata2[9]",
+					"strict" : false
+				},
+				{
+					"name" : "rdata2[10]",
+					"strict" : false
+				},
+				{
+					"name" : "rdata2[11]",
+					"strict" : false
+				},
+				{
+					"name" : "rdata2[12]",
+					"strict" : false
+				},
+				{
+					"name" : "rdata2[13]",
+					"strict" : false
+				},
+				{
+					"name" : "rdata2[14]",
+					"strict" : false
+				},
+				{
+					"name" : "rdata2[15]",
+					"strict" : false
+				},
+				{
+					"name" : "clock",
+					"strict" : false
+				},
+				{
+					"name" : "radd1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "radd1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "radd1[2]",
+					"strict" : false
+				},
+				{
+					"name" : "wdata[0]",
+					"strict" : false
+				},
+				{
+					"name" : "wflag",
+					"strict" : false
+				},
+				{
+					"name" : "wadd[0]",
+					"strict" : false
+				},
+				{
+					"name" : "wadd[1]",
+					"strict" : false
+				},
+				{
+					"name" : "wadd[2]",
+					"strict" : false
+				},
+				{
+					"name" : "enable",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "exec",
+					"strict" : false
+				},
+				{
+					"name" : "wdata[1]",
+					"strict" : false
+				},
+				{
+					"name" : "wdata[2]",
+					"strict" : false
+				},
+				{
+					"name" : "wdata[3]",
+					"strict" : false
+				},
+				{
+					"name" : "wdata[4]",
+					"strict" : false
+				},
+				{
+					"name" : "wdata[5]",
+					"strict" : false
+				},
+				{
+					"name" : "wdata[6]",
+					"strict" : false
+				},
+				{
+					"name" : "wdata[7]",
+					"strict" : false
+				},
+				{
+					"name" : "wdata[8]",
+					"strict" : false
+				},
+				{
+					"name" : "wdata[9]",
+					"strict" : false
+				},
+				{
+					"name" : "wdata[10]",
+					"strict" : false
+				},
+				{
+					"name" : "wdata[11]",
+					"strict" : false
+				},
+				{
+					"name" : "wdata[12]",
+					"strict" : false
+				},
+				{
+					"name" : "wdata[13]",
+					"strict" : false
+				},
+				{
+					"name" : "wdata[14]",
+					"strict" : false
+				},
+				{
+					"name" : "wdata[15]",
+					"strict" : false
+				},
+				{
+					"name" : "radd2[1]",
+					"strict" : false
+				},
+				{
+					"name" : "radd2[0]",
+					"strict" : false
+				},
+				{
+					"name" : "radd2[2]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

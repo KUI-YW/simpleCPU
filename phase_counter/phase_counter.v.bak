@@ -1,0 +1,38 @@
+module phase_counter
+(
+	input clock,
+	input reset,
+	output reg phase1,
+	output reg phase2,
+	output reg phase3
+);
+	
+	reg [1:0] count = 2'b00;
+	
+	always @(posedge clock or negedge reset) begin
+		if(! reset) begin 
+			count <= 2'b00;
+		end 
+		else begin 
+			if(count == 2'b00) begin
+				phase1 <= 1'b1;
+				phase2 <= 1'b0;
+				phase3 <= 1'b0;
+				count <= 2'b01;
+			end 
+			else if(count == 2'b01) begin
+				phase1 <= 1'b0;
+				phase2 <= 1'b1;
+				phase3 <= 1'b0;
+				count <= 2'b10;
+			end 
+			else begin 
+				phase1 <= 1'b0;
+				phase2 <= 1'b0;
+				phase3 <= 1'b1;
+				count <= 2'b00;
+			end
+		end
+	end
+	
+endmodule
