@@ -1,2 +1,2 @@
 # simpleCPU
-CPU
+自作CPU
